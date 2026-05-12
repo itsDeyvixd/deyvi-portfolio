@@ -29,69 +29,79 @@ export default function Contact() {
     }
   }
 
-  const inputClass = "w-full bg-transparent border border-white/10 text-paper text-sm px-4 py-3 focus:outline-none focus:border-red transition-colors duration-200 placeholder:text-ash/40"
+  const inputStyle = {
+    width: '100%',
+    backgroundColor: 'transparent',
+    border: '1px solid rgba(255,255,255,0.15)',
+    color: '#F5F0EB',
+    fontSize: '14px',
+    padding: '12px 16px',
+    outline: 'none',
+    fontFamily: 'Inter, sans-serif',
+    marginBottom: '16px',
+    display: 'block',
+  }
 
   return (
-    <section id="contact" ref={ref} className="bg-red py-24 px-8 md:px-16">
+    <section id="contact" ref={ref} style={{ backgroundColor: '#C8372D' }} className="py-24 px-8 md:px-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        {/* Left */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-bebas text-7xl md:text-8xl leading-none tracking-tight text-paper">
+          <h2 style={{ color: '#F5F0EB' }} className="font-bebas text-7xl md:text-8xl leading-none tracking-tight">
             LET'S<br />WORK<br />
-            <span className="text-paper/30">TOGETHER.</span>
+            <span style={{ color: 'rgba(245,240,235,0.3)' }}>TOGETHER.</span>
           </h2>
           <div className="mt-8 space-y-2">
-            <p className="text-paper/60 text-xs tracking-widest uppercase">
+            <p style={{ color: 'rgba(245,240,235,0.6)' }} className="text-xs tracking-widest uppercase">
               deyviardilaforero@gmail.com
             </p>
-            <p className="text-paper/60 text-xs tracking-widest uppercase">
-              Bogotá D.C., Colombia
+            <p style={{ color: 'rgba(245,240,235,0.6)' }} className="text-xs tracking-widest uppercase">
+              Bogota D.C., Colombia
             </p>
           </div>
           <div className="flex gap-6 mt-8">
-            <a href="https://github.com/itsDeyvixd" target="_blank"
-              className="text-paper/50 text-xs tracking-widest uppercase hover:text-paper transition-colors">
+            <a href="https://github.com/itsDeyvixd" target="_blank" rel="noreferrer"
+              style={{ color: 'rgba(245,240,235,0.5)', textDecoration: 'none' }}
+              className="text-xs tracking-widest uppercase">
               GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank"
-              className="text-paper/50 text-xs tracking-widest uppercase hover:text-paper transition-colors">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+              style={{ color: 'rgba(245,240,235,0.5)', textDecoration: 'none' }}
+              className="text-xs tracking-widest uppercase">
               LinkedIn
             </a>
           </div>
         </motion.div>
 
-        {/* Form */}
         <motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, x: 40 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="space-y-4"
         >
           <input name="name" value={form.name} onChange={handleChange}
-            placeholder="Tu nombre" required className={inputClass} />
+            placeholder="Tu nombre" required style={inputStyle} />
           <input name="email" type="email" value={form.email} onChange={handleChange}
-            placeholder="Tu email" required className={inputClass} />
+            placeholder="Tu email" required style={inputStyle} />
           <textarea name="message" value={form.message} onChange={handleChange}
-            placeholder="Tu mensaje" required rows={5} className={inputClass} />
+            placeholder="Tu mensaje" required rows={5} style={inputStyle} />
 
           <button type="submit" disabled={status === 'sending'}
-            className="w-full bg-ink text-paper text-xs tracking-widest uppercase py-4 hover:bg-ink/80 transition-colors duration-200 disabled:opacity-50">
+            style={{ width: '100%', backgroundColor: '#0D0D0D', color: '#F5F0EB', border: 'none', padding: '16px', fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
             {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
           </button>
 
           {status === 'ok' && (
-            <p className="text-paper text-xs tracking-widest text-center">
-              ✓ Mensaje enviado correctamente
+            <p style={{ color: '#F5F0EB', textAlign: 'center', marginTop: '12px', fontSize: '11px', letterSpacing: '0.1em' }}>
+              Mensaje enviado correctamente
             </p>
           )}
           {status === 'error' && (
-            <p className="text-paper/60 text-xs tracking-widest text-center">
+            <p style={{ color: 'rgba(245,240,235,0.6)', textAlign: 'center', marginTop: '12px', fontSize: '11px' }}>
               Error al enviar. Intenta de nuevo.
             </p>
           )}
