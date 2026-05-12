@@ -5,7 +5,7 @@ import { useRef } from 'react'
 const stats = [
   { num: '4+', label: 'Years QA' },
   { num: '45', label: 'Tests automated' },
-  { num: 'B2', label: 'English level' },
+  { num: 'C1', label: 'English level' },
   { num: 'UNAL', label: 'University' },
 ]
 
@@ -40,7 +40,7 @@ export default function About() {
             Computer Science at Universidad Nacional de Colombia.
           </p>
           <p style={{ color: 'rgba(13,13,13,0.6)' }} className="text-sm leading-relaxed">
-            Bilingual Spanish/English (B2), focused on building quality software
+            Bilingual Spanish/English (C1), focused on building quality software
             — from testing all the way to deployment.
           </p>
 
