@@ -1,7 +1,4 @@
-
 import { motion } from 'framer-motion'
-
-<section id="hero" className="min-h-screen ..."></section>
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -11,7 +8,7 @@ const fade = (delay = 0) => ({
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-ink flex flex-col justify-center px-8 md:px-16 pt-20 relative overflow-hidden">
+    <section id="hero" className="min-h-screen bg-ink flex flex-col justify-center px-8 md:px-16 pt-20 relative overflow-hidden">
 
       <div style={{ writingMode: 'vertical-rl' }}
         className="absolute right-8 top-1/2 text-ash/20 text-xs tracking-[0.4em] uppercase">
