@@ -50,7 +50,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className="absolute bottom-12 right-8 md:right-16 w-20 h-20 rounded-full border border-red/40 flex flex-col items-center justify-center"
+        className="absolute bottom-12 right-20 md:right-24 w-20 h-20 rounded-full border border-red/40 flex flex-col items-center justify-center"
       >
         <span className="font-oxanium text-red text-xl tracking-wider">DA</span>
         <span className="text-red/60 text-[9px] tracking-widest">2026</span>

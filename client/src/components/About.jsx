@@ -19,7 +19,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="about" ref={ref} style={{ backgroundColor: '#F5F0EB', color: '#0D0D0D' }} className="py-24 px-8 md:px-16">
+    <section id="about" ref={ref} style={{ backgroundColor: '#F5F0EB', color: '#0D0D0D' }} className="min-h-screen py-24 px-8 md:px-16">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
         <motion.div
