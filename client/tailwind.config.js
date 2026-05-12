@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        red:   '#C8372D',
-        ink:   '#0D0D0D',
+        red: '#C8372D',
+        ink: '#0D0D0D',
         paper: '#F5F0EB',
-        ash:   '#8A8580',
+        ash: '#8A8580',
       },
       fontFamily: {
-        bebas: ['Bebas Neue', 'sans-serif'],
-        sans:  ['Inter', 'sans-serif'],
+        dela: ['Dela Gothic One', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },

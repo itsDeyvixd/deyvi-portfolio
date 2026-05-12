@@ -51,7 +51,7 @@ export default function Contact() {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 style={{ color: '#F5F0EB' }} className="font-bebas text-7xl md:text-8xl leading-none tracking-tight">
+          <h2 style={{ color: '#F5F0EB' }} className="font-dela text-7xl md:text-8xl leading-none tracking-tight">
             LET'S<br />WORK<br />
             <span style={{ color: 'rgba(245,240,235,0.3)' }}>TOGETHER.</span>
           </h2>

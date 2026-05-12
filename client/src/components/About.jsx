@@ -28,10 +28,10 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <p style={{ color: '#C8372D' }} className="text-xs tracking-[0.35em] uppercase mb-3 flex items-center gap-3">
-            <span style={{ color: 'rgba(0,0,0,0.1)' }} className="font-bebas text-2xl">01</span>
+            <span style={{ color: 'rgba(0,0,0,0.1)' }} className="font-dela text-2xl">01</span>
             About
           </p>
-          <h2 className="font-bebas text-6xl md:text-7xl leading-none tracking-tight mb-6">
+          <h2 className="font-dela text-6xl md:text-7xl leading-none tracking-tight mb-6">
             CS STUDENT<br />&amp; QA ENGINEER
           </h2>
           <p style={{ color: 'rgba(13,13,13,0.6)' }} className="text-sm leading-relaxed mb-4">
@@ -63,7 +63,7 @@ export default function About() {
         >
           {stats.map(({ num, label }) => (
             <div key={label} style={{ backgroundColor: '#F5F0EB' }} className="p-8 text-center">
-              <div className="font-bebas text-5xl tracking-tight">{num}</div>
+              <div className="font-dela text-5xl tracking-tight">{num}</div>
               <div style={{ color: '#8A8580' }} className="text-[9px] tracking-widest uppercase mt-1">{label}</div>
             </div>
           ))}

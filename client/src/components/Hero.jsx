@@ -26,10 +26,10 @@ export default function Hero() {
         QA Engineer · Full Stack Developer
       </motion.p>
 
-      <motion.h1 {...fade(0.4)} className="font-bebas text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
+      <motion.h1 {...fade(0.4)} className="font-dela text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
         DEYVI
       </motion.h1>
-      <motion.h1 {...fade(0.5)} className="font-bebas text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
+      <motion.h1 {...fade(0.5)} className="font-dela text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
         AR<span className="text-red">DI</span>LA
       </motion.h1>
 
@@ -41,10 +41,10 @@ export default function Hero() {
 
       <motion.div {...fade(0.8)} className="flex gap-6 mt-10">
         <a href="#projects" className="border border-red text-red text-xs tracking-widest uppercase px-6 py-3 hover:bg-red hover:text-paper transition-all duration-300">
-          Ver proyectos
+          View Projects
         </a>
         <a href="#contact" className="text-ash text-xs tracking-widest uppercase px-6 py-3 border border-white/10 hover:border-ash transition-all duration-300">
-          Contacto
+          Contact
         </a>
       </motion.div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 1 }}
         className="absolute bottom-12 right-8 md:right-16 w-20 h-20 rounded-full border border-red/40 flex flex-col items-center justify-center"
       >
-        <span className="font-bebas text-red text-xl tracking-wider">DA</span>
+        <span className="font-dela text-red text-xl tracking-wider">DA</span>
         <span className="text-red/60 text-[9px] tracking-widest">2026</span>
       </motion.div>
 

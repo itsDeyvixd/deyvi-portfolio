@@ -4,7 +4,7 @@ export default function Footer() {
       <span className="text-ash/40 text-xs tracking-widest uppercase">
         © 2026 Deyvi Ardila
       </span>
-      <span className="text-ash/20 text-xs tracking-widest uppercase font-bebas">
+      <span className="text-ash/20 text-xs tracking-widest uppercase font-dela">
         Built with MERN
       </span>
     </footer>

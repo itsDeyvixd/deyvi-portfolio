@@ -31,7 +31,7 @@ export default function Navbar() {
       }`}
     >
       {/* Logo */}
-      <span className="font-bebas text-2xl tracking-widest text-paper">
+      <span className="font-dela text-2xl tracking-widest text-paper">
         DEYVI<span className="text-red">.</span>
       </span>
 
