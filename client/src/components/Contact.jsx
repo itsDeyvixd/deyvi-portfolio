@@ -69,7 +69,7 @@ export default function Contact() {
               className="text-xs tracking-widest uppercase">
               GitHub
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/in/deyvi-ardila-forero-792154253/" target="_blank" rel="noreferrer"
               style={{ color: 'rgba(245,240,235,0.5)', textDecoration: 'none' }}
               className="text-xs tracking-widest uppercase">
               LinkedIn
