@@ -11,7 +11,7 @@ export default function Hero() {
     <section id="hero" className="min-h-screen bg-ink flex flex-col justify-center px-8 md:px-16 pt-20 relative overflow-hidden">
 
       <div style={{ writingMode: 'vertical-rl' }}
-        className="absolute right-8 top-1/2 text-ash/20 text-xs tracking-[0.4em] uppercase">
+        className="absolute left-8 top-1/2 text-ash/20 text-xs tracking-[0.4em] uppercase">
         Portfolio · 2026 · Bogota
       </div>
 
