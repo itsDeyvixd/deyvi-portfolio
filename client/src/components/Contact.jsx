@@ -51,7 +51,7 @@ export default function Contact() {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 style={{ color: '#F5F0EB' }} className="font-dela text-7xl md:text-8xl leading-none tracking-tight">
+          <h2 style={{ color: '#F5F0EB' }} className="font-oxanium text-7xl md:text-8xl leading-none tracking-tight">
             LET'S<br />WORK<br />
             <span style={{ color: 'rgba(245,240,235,0.3)' }}>TOGETHER.</span>
           </h2>
@@ -84,15 +84,15 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <input name="name" value={form.name} onChange={handleChange}
-            placeholder="Tu nombre" required style={inputStyle} />
+            placeholder="Your name" required style={inputStyle} />
           <input name="email" type="email" value={form.email} onChange={handleChange}
-            placeholder="Tu email" required style={inputStyle} />
+            placeholder="Your email" required style={inputStyle} />
           <textarea name="message" value={form.message} onChange={handleChange}
-            placeholder="Tu mensaje" required rows={5} style={inputStyle} />
+            placeholder="Your message" required rows={5} style={inputStyle} />
 
           <button type="submit" disabled={status === 'sending'}
             style={{ width: '100%', backgroundColor: '#0D0D0D', color: '#F5F0EB', border: 'none', padding: '16px', fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
-            {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
+            {status === 'sending' ? 'Sending...' : 'Send message'}
           </button>
 
           {status === 'ok' && (

@@ -10,7 +10,7 @@ export default {
         ash: '#8A8580',
       },
       fontFamily: {
-        dela: ['Dela Gothic One', 'sans-serif'],
+        oxanium: ['Oxanium', 'sans-serif'],
         sans: ['Inter', 'sans-serif'],
       },
     },

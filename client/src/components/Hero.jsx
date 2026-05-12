@@ -26,11 +26,11 @@ export default function Hero() {
         QA Engineer · Full Stack Developer
       </motion.p>
 
-      <motion.h1 {...fade(0.4)} className="font-dela text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
+      <motion.h1 {...fade(0.4)} className="font-oxanium text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
         DEYVI
       </motion.h1>
-      <motion.h1 {...fade(0.5)} className="font-dela text-[clamp(80px,15vw,160px)] leading-none tracking-tight text-paper">
-        AR<span className="text-red">DI</span>LA
+      <motion.h1 {...fade(0.5)} className="font-oxanium text-[clamp(80px,15vw,160px)] leading-none tracking-tight" style={{ color: '#C8372D' }}>
+        ARDILA
       </motion.h1>
 
       <motion.div {...fade(0.6)} className="w-16 h-0.5 bg-red my-6" />
@@ -53,7 +53,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 1 }}
         className="absolute bottom-12 right-8 md:right-16 w-20 h-20 rounded-full border border-red/40 flex flex-col items-center justify-center"
       >
-        <span className="font-dela text-red text-xl tracking-wider">DA</span>
+        <span className="font-oxanium text-red text-xl tracking-wider">DA</span>
         <span className="text-red/60 text-[9px] tracking-widest">2026</span>
       </motion.div>
 

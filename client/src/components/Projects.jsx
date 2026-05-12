@@ -44,10 +44,10 @@ export default function Projects() {
           className="mb-12"
         >
           <p style={{ color: '#C8372D' }} className="text-xs tracking-[0.35em] uppercase mb-3 flex items-center gap-3">
-            <span style={{ color: 'rgba(245,240,235,0.1)' }} className="font-dela text-2xl">02</span>
+            <span style={{ color: 'rgba(245,240,235,0.1)' }} className="font-oxanium text-2xl">02</span>
             Projects
           </p>
-          <h2 style={{ color: '#F5F0EB' }} className="font-dela text-6xl md:text-7xl leading-none tracking-tight">
+          <h2 style={{ color: '#F5F0EB' }} className="font-oxanium text-6xl md:text-7xl leading-none tracking-tight">
             SELECTED<br />WORK
           </h2>
         </motion.div>
@@ -65,10 +65,10 @@ export default function Projects() {
               style={{ backgroundColor: '#0D0D0D', display: 'block', textDecoration: 'none' }}
               className="group p-8"
             >
-              <div style={{ color: 'rgba(255,255,255,0.08)' }} className="font-dela text-3xl mb-4">{p.num}</div>
+              <div style={{ color: 'rgba(255,255,255,0.08)' }} className="font-oxanium text-3xl mb-4">{p.num}</div>
 
               <div className="flex items-start justify-between mb-3">
-                <h3 style={{ color: '#F5F0EB' }} className="font-dela text-2xl tracking-wide">
+                <h3 style={{ color: '#F5F0EB' }} className="font-oxanium text-2xl tracking-wide">
                   {p.name}
                 </h3>
                 {p.status === 'live' && (
@@ -105,7 +105,7 @@ export default function Projects() {
           <div style={{ backgroundColor: '#0D0D0D', border: '1px solid rgba(255,255,255,0.05)' }}
             className="p-8 flex items-center justify-center min-h-48">
             <div className="text-center">
-              <div style={{ color: 'rgba(255,255,255,0.04)' }} className="font-dela text-5xl">004</div>
+              <div style={{ color: 'rgba(255,255,255,0.04)' }} className="font-oxanium text-5xl">004</div>
               <div style={{ color: 'rgba(255,255,255,0.2)' }} className="text-[10px] tracking-widest uppercase mt-2">Coming soon</div>
             </div>
           </div>
